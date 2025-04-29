@@ -17,3 +17,46 @@
 h1, h2{
     font-family: "raleway";
 }
+body{
+    background-color: var(--bluedark);
+}
+a{
+    text-decoration: none;
+}
+
+/* header */
+header{
+    max-width: 1460px;
+    margin: auto;
+    padding: 15px 0;
+}
+header img{
+    width: 180px;
+}
+#contactez{
+    display: none;
+}
+label{
+    background-color: var(--orange);
+    color: var(--white);
+}
+nav a{
+    color: var(--orange);
+
+    &:hover{
+        color: var(--red);
+    }
+}
+a p{
+    color: var(--white);
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    gap: 15px;
+    align-items: center;  
+}
+article img
