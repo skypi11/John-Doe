@@ -1,0 +1,19 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* général */
+* {
+    font-family: "open sans", sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+:root{
+    --red: #E7174A;
+    --white: #FFFFFF;
+    --bluedark: #011826;
+    --orange: #FF9A16;
+    --green: #2CC1AA;
+}
+h1, h2{
+    font-family: "raleway";
+}
