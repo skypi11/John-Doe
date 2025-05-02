@@ -14,8 +14,9 @@
     --orange: #FF9A16;
     --green: #2CC1AA;
 }
-h1, h2{
+h1, h2, h3{
     font-family: "raleway";
+    color: var(--white);
 }
 body{
     background-color: var(--bluedark);
@@ -36,9 +37,15 @@ header img{
 #contactez{
     display: none;
 }
-label{
+.contact label{
     background-color: var(--orange);
     color: var(--white);
+    padding: 5px 10px;
+}
+.textmoi .contact label{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 20px;
 }
 nav a{
     color: var(--orange);
@@ -59,4 +66,94 @@ nav{
     gap: 15px;
     align-items: center;  
 }
-article img
+
+/* main */
+.moi{
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 100px;
+    
+}
+article img{
+    width: 664px;
+}
+article p{
+    color: var(--white);
+    margin: 20px 0 0;
+}
+.textmoi{
+    width: 576px;
+}
+.formation{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+.formation article .imgcode{
+    width: 798px;
+    position: relative;
+    left: 50px;
+}
+.formation h2{
+    text-align: center;
+}
+.formation article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: auto;
+}
+.formation .text1{
+    background-color: var(--orange);
+    width: 442px;
+    position: relative;
+    right: 50px;
+    padding: 20px;
+}
+.formation .text2{
+    background-color: var(--orange);
+    width: 442px;
+    position: relative;
+    left: 50px;
+    padding: 20px;
+    z-index: 1;
+}
+.formation article .imgordi{
+    width: 798px;
+    position: relative;
+    right: 50px;
+}
+.text2 a, .text1 a{
+    position: relative;
+    padding: 5px 10px;
+    background-color: var(--bluedark);
+    border: 1px solid var(--white);
+    color: var(--white);
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    top: 36px;
+}
+.skill article{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px   ;
+}
+.skill details{
+    flex: 1 0 45%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: var(--white);
+}
+.skill h2{
+    text-align: center;
+    margin: 40px;
+}
