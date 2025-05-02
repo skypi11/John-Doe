@@ -15,15 +15,47 @@
                 </a>
             </div>
             <nav>
-                <a href="#">Accueil</a>
-                <a href="#">Qui suis je ?</a>
-                <a href="#">Ma formation</a>
-                <a href="#">Mes compétences</a>
-                <a href="#">Mes projets</a>
-                <form action="" class="contact">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Qui suis je ?</a></li>
+                    <li><a href="#">Ma formation</a></li>
+                    <li><a href="#">Mes compétences</a></li>
+                    <li><a href="#">Mes projets</a></li>
+                    <li> 
+                        <!-- <form action="" class="contact"> -->
                     <input type="checkbox" name="" id="contactez">
-                    <label for="contactez">Contactez-moi</label>
-                </form>
+                    <label class="open" for="contactez">Contactez-moi</label>
+                <!-- </form> -->
+                <div class="modal">
+                    <label class="open" for="contactez">X</label>
+                    <div>
+                        <h2>Me contacter</h2>
+                        <form action="" class="contactopen">
+                            <div>
+                                <label for="name">Votre nom :</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="name">Votre email :</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="name">Votre message :</label>
+                                <textarea name="mess" id="mess"></textarea>
+                            </div>
+                            <div>
+                                <button>Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div></li>
+                </ul>
+                
+                
+                
+                
+                
+               
             </nav>
         </div>
     </header>
@@ -48,9 +80,7 @@
                     <label for="contactez">Contactez-moi</label>
                 </form>
             </article>
-            <article>
-                <img src="img/moi.png" alt="photo du developpeur">
-            </article>
+            <img src="img/moi.png" alt="photo du developpeur">
         </section>
         <section class="formation">
             <h2>Ma formation</h2>
@@ -218,10 +248,41 @@
                 </div>
             </div>
         </section>
-
+        <section class="projet">
+            <div class="projetheader">
+                <h2>Mes projets</h2>
+                <a href="#">Voir tous les projets</a>
+            </div>
+            <article>
+                <div>
+                    <div class="mesprojets">
+                        <img src="/img/projet1.PNG" alt="mon projet 1">
+                        <h3>Home Key - Intégration HTML & CSS</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui omnis modi delectus minus aspernatur voluptatum, quia tenetur culpa accusamus incidunt esse ipsum hic exercitationem iusto cupiditate est pariatur, non ullam.</p>
+                    </div>
+                    <a href="#">Lire la suite</a>
+                </div>
+                <div>
+                    <div class="mesprojets">
+                        <img src="/img/projet1.PNG" alt="mon projet 1">
+                        <h3>Home Key - Intégration HTML & CSS</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui omnis modi delectus minus aspernatur voluptatum, quia tenetur culpa accusamus incidunt esse ipsum hic exercitationem iusto cupiditate est pariatur, non ullam.</p>
+                    </div>
+                    <a href="#">Lire la suite</a>
+                </div>
+                <div>
+                    <div class="mesprojets">
+                        <img src="/img/projet1.PNG" alt="mon projet 1">
+                        <h3>Home Key - Intégration HTML & CSS</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui omnis modi delectus minus aspernatur voluptatum, quia tenetur culpa accusamus incidunt esse ipsum hic exercitationem iusto cupiditate est pariatur, non ullam.</p>
+                    </div>
+                    <a href="#">Lire la suite</a>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
-
+        <p>Mon super site web</p>
     </footer>
 </body>
 </html>

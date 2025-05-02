@@ -37,6 +37,13 @@ header img{
 #contactez{
     display: none;
 }
+.modal{
+    display: none;
+}
+input[type="checkbox"]:checked + div.modal{
+    display: block!important;
+
+}
 .contact label{
     background-color: var(--orange);
     color: var(--white);
@@ -60,12 +67,37 @@ a p{
 .head{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-nav{
+nav ul{
     display: flex;
     gap: 15px;
     align-items: center;  
 }
+.modal > div{
+    background-color: beige;
+    padding: 30px;
+}
+.modal h2{
+    color: black;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.modal > label{
+    color: var(--orange);
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+.contactopen div{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* main */
 .moi{
@@ -77,7 +109,7 @@ nav{
     margin-top: 100px;
     
 }
-article img{
+.moi img{
     width: 664px;
 }
 article p{
@@ -161,3 +193,37 @@ article p{
     display: grid;
     gap: 20px;
 }
+.projet{
+    max-width: 1440px;
+    margin: auto;
+}
+.projetheader{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.projet a{
+    color: var(--white);
+    padding: 10px;
+    border: 1px solid var(--white);
+}
+.projet article img{
+    width: 100%;
+}
+.projet article{
+    display: flex;
+    gap: 60px;
+    
+}
+.mesprojets{
+    border: 1px solid var(--white);
+    padding: 20px 10px 0;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: var(--green);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
