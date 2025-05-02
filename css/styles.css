@@ -34,17 +34,24 @@ header{
 header img{
     width: 180px;
 }
+.head li{
+    list-style: none;
+}
 #contactez{
     display: none;
 }
 .modal{
     display: none;
+    position: absolute;
+}
+.modal li{
+    position: relative;
 }
 input[type="checkbox"]:checked + div.modal{
     display: block!important;
 
 }
-.contact label{
+.contact label, .open{
     background-color: var(--orange);
     color: var(--white);
     padding: 5px 10px;
@@ -92,6 +99,11 @@ nav ul{
     font-weight: 700;
     display: flex;
     justify-content: flex-end;
+}
+.contactopen button{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
 }
 .contactopen div{
     display: flex;
