@@ -327,6 +327,8 @@ footer{
         justify-content: center;
         gap: 20px;
         color: var(--white);
+        animation: bandeau 2s linear;
+        position: relative;
     }
     .desc article{
         display: flex;
@@ -350,4 +352,40 @@ footer{
         margin-top: 60px;
     }
 
+}
+/* Mes projets page */
+
+#mesprojets{
+    .projet article{
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 80px;
+        margin-bottom: 80px;
+    }
+    .red{
+        background-color: var(--red);
+        text-align: center;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        color: var(--white);
+        animation: bandeau 2s linear;
+        position: relative;
+    }
+}
+@keyframes bandeau {
+    0%{
+        opacity: 0;
+        top: 200px;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
 }
