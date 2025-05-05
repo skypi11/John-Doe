@@ -61,6 +61,8 @@ input[type="checkbox"]:checked + div.modal{
     background-color: var(--orange);
     color: var(--white);
     padding: 20px;
+    margin-top: 37px;
+    display: inline-block;
 }
 nav a{
     color: var(--orange);
@@ -158,6 +160,10 @@ nav ul{
     display: flex;
     flex-direction: column;
 }
+.burger{
+    color: var(--white);
+    display: none;
+}
 
 
 /* main */
@@ -169,11 +175,13 @@ nav ul{
     flex: 1;
     margin-top: 100px;
     min-height: 664px;
+    gap: 20px;
 }
 .moi img{
-     width: 664px;
+    width: 664px;
     animation: popup 2s linear;
     position: relative;
+    height: fit-content;
 }
 @keyframes popup {
     0%{
@@ -389,3 +397,27 @@ footer{
         top: 0;
     }
 }
+
+/* responsive tablet */
+@media screen and (max-width: 1024px) {
+    .menuhead{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .moi{
+        flex-direction: column;
+        align-items: center;
+    }
+    .formation article{
+        width: 100%;
+    }
+    .formation .text1{
+        width: 321px;
+    }
+    .formation article .imgcode{
+        width: 516px;
+    }
+}
+    
