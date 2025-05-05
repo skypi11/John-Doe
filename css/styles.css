@@ -286,6 +286,9 @@ article p{
     text-align: center;
     margin: 40px;
 }
+.skill{
+    margin: 0 20px;
+}
 .comp1 > div{
     display: grid;
     gap: 20px;
@@ -418,6 +421,27 @@ footer{
     }
     .formation article .imgcode{
         width: 516px;
+    }
+    .formation .text2{
+        width: 321px;
+    }
+    .formation article .imgordi{
+        width: 516px;
+    }
+    .projet article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        row-gap: 35px;
+    }
+    .projet article > div:nth-child(3){
+        grid-column: 1/3;
+    }
+    .projet{
+        margin: 0px 20px;
+    }
+    header{
+        margin: 0 20px;
     }
 }
     
