@@ -444,4 +444,49 @@ footer{
         margin: 0 20px;
     }
 }
+/* Phone responsive */
+@media screen and (max-width: 767px) {
+    .moi img{
+        width: 100%;
+    }
+    .textmoi{
+        width: 100%;
+    }
+    .formation article .imgcode{
+        left: 0;
+        width: 100%;
+    }
+    .formation article{
+        flex-direction: column;
+    }
+    .formation article:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    .formation .text1{
+        right: 0;
+        width: auto;
+    }
+    .formation .text2{
+        width: auto;
+        left: 0;
+    }
+    .formation article .imgordi{
+        width: 100%;
+        right: 0;
+    }
+    .skill .comp1{
+        grid-template-columns: 1fr;
+    }
+    .projetheader{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .projet article > div:nth-child(3){
+        grid-column: 1;
+    }
+    .projet article{
+        grid-template-columns: 1fr;
+    }
+    
+}
     
