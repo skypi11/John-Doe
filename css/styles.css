@@ -487,6 +487,17 @@ footer{
     .projet article{
         grid-template-columns: 1fr;
     }
+    main{
+        margin: 0 15px;
+    }
     
 }
-    
+/* Ma formation tablette responsive */
+@media screen and (max-width:1024px){
+    #formation main {
+        .desc article {
+            padding: 20px;
+            flex-direction: column;
+        }
+    }
+}
