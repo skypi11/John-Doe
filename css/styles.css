@@ -43,6 +43,7 @@ header img{
 .modal{
     display: none;
     position: absolute;
+    right: 1px;
 }
 .modal li{
     position: relative;
@@ -75,6 +76,54 @@ a p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.head nav ul li:nth-child(1){
+    position: relative;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 0;
+}
+.head nav ul li:nth-child(2){
+    position: relative;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 0.2s;
+}
+.head nav ul li:nth-child(3){
+    position: relative;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 0.4s;
+}
+.head nav ul li:nth-child(4){
+    position: relative;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 0.6s;
+}
+.head nav ul li:nth-child(5){
+    position: relative;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 0.8s;
+}
+.head nav ul li:nth-child(6){
+    position: relative;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 1s;
+}
+@keyframes fadein {
+    0%{
+        bottom: -30px;
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        bottom:0;
+    }
+    
 }
 nav ul{
     display: flex;
@@ -112,17 +161,32 @@ nav ul{
 
 
 /* main */
-.moi{
+.moi{ 
     display: flex;
     max-width: 1440px;
     margin: auto;
     justify-content: space-between;
     flex: 1;
     margin-top: 100px;
-    
+    min-height: 664px;
 }
 .moi img{
-    width: 664px;
+     width: 664px;
+    animation: popup 2s linear;
+    position: relative;
+}
+@keyframes popup {
+    0%{
+        width: 0px;
+        height:0px;
+        opacity: 0;
+    }
+    100%{
+        width: 664px;
+        height: 664px;
+        opacity: 1;   
+    }
+    
 }
 article p{
     color: var(--white);
@@ -130,6 +194,19 @@ article p{
 }
 .textmoi{
     width: 576px;
+    animation: popuptext 2s linear;
+    position: relative;
+}
+@keyframes popuptext {
+    0%{
+        opacity: 0;
+        bottom: -300px;
+    }
+    100%{
+        opacity: 1;
+        bottom: 0;
+    }
+    
 }
 .formation{
     max-width: 1440px;
@@ -232,10 +309,45 @@ article p{
     padding: 20px 10px 0;
     margin-bottom: 30px;
 }
+
 footer{
     background-color: var(--green);
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
+/* page formation */
+#formation main{
+    .red{
+        background-color: var(--red);
+        text-align: center;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        color: var(--white);
+    }
+    .desc article{
+        display: flex;
+        max-width: 1440px;
+        gap: 50px;
+        margin: auto;
+        padding: 100px;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
 
+            img{
+                width: 680px;
+            }
+    }
+    .projet .voirplus{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+}
