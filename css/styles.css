@@ -34,16 +34,45 @@ header{
 header img{
     width: 180px;
 }
+.head nav{
+    display: flex;
+    gap: 10px
+}
 .head li{
     list-style: none;
 }
 #contactez{
     display: none;
 }
+.active{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 68px;
+        flex-direction: column;
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 30px;
+    }
+.divbutton {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.buttonmodalclose{
+    color: var(--white);
+    background-color: var(--red);
+    border: 1px solid black;
+    padding: 10px 20px;
+}
 .modal{
-    display: none;
     position: absolute;
-    right: 1px;
+    margin: auto;
+    z-index: 2;
+}
+::backdrop{
+    background : var(--bluedark);
+    opacity: 0.8;
 }
 .modal li{
     position: relative;
@@ -79,37 +108,37 @@ a p{
     justify-content: space-between;
     align-items: center;
 }
-.head nav ul li:nth-child(1){
+.menuhead1{
     position: relative;
     opacity: 0;
     animation: fadein 2s forwards;
     animation-delay: 0;
 }
-.head nav ul li:nth-child(2){
+.menuhead2{
     position: relative;
     opacity: 0;
     animation: fadein 2s forwards;
     animation-delay: 0.2s;
 }
-.head nav ul li:nth-child(3){
+.menuhead3{
     position: relative;
     opacity: 0;
     animation: fadein 2s forwards;
     animation-delay: 0.4s;
 }
-.head nav ul li:nth-child(4){
+.menuhead4{
     position: relative;
     opacity: 0;
     animation: fadein 2s forwards;
     animation-delay: 0.6s;
 }
-.head nav ul li:nth-child(5){
+.menuhead5{
     position: relative;
     opacity: 0;
     animation: fadein 2s forwards;
     animation-delay: 0.8s;
 }
-.head nav ul li:nth-child(6){
+.buttonModal{
     position: relative;
     opacity: 0;
     animation: fadein 2s forwards;
@@ -132,9 +161,10 @@ nav ul{
     gap: 15px;
     align-items: center;  
 }
+
 .modal > div{
     background-color: beige;
-    padding: 30px;
+    padding: 30px 30px 10px;
 }
 .modal h2{
     color: black;
@@ -404,11 +434,13 @@ footer{
 
 /* responsive tablet */
 @media screen and (max-width: 1024px) {
-    .menuhead{
+    .navLink , .buttonModal{
         display: none;
     }
+    
     .burger{
         display: block;
+        background-color: var(--bluedark);
     }
     .moi{
         flex-direction: column;

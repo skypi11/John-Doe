@@ -1,282 +1,348 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/2a31a2d243.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2a31a2d243.js"
+      crossorigin="anonymous"
+    ></script>
     <title>John Doe</title>
-</head>
-<body id="index">
+  </head>
+  <body id="index">
     <header>
-        <div class="head">
-            <div>
-                <a href="/index.html"><img src="img/Logo.png" alt="logo John Doe">
-                <p>Developpeur Web et Web mobile</p>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li class="menuhead"><a href="/index.html">Accueil</a></li>
-                    <li class="menuhead"><a href="#">Qui suis je ?</a></li>
-                    <li class="menuhead"><a href="/formation.html">Ma formation</a></li>
-                    <li class="menuhead"><a href="#">Mes compétences</a></li>
-                    <li class="menuhead"><a href="/mesprojets.html">Mes projets</a></li>
-                    <li class="menuhead"> <label class="open" for="contactez">Contactez-moi</label>
-                        <input type="checkbox" name="" id="contactez">
-                        <div class="modal">
-                            <label for="contactez">X</label>
-                            <div>
-                                <h2>Me contacter</h2>
-                                <form action="" class="contactopen">
-                                    <div>
-                                        <label for="name">Votre nom :</label>
-                                        <input type="text" name="name" id="name">
-                                    </div>
-                                    <div>
-                                        <label for="name">Votre email :</label>
-                                        <input type="text" name="email" id="email">
-                                    </div>
-                                    <div>
-                                        <label for="name">Votre message :</label>
-                                        <textarea name="mess" id="mess"></textarea>
-                                    </div>
-                                    <div>
-                                        <button>Envoyer la demande</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="burger"><i class="fa-solid fa-bars"></i></li>
-                </ul>
-            </nav>
+      <div class="head">
+        <div>
+          <a href="/index.html"
+            ><img src="img/Logo.png" alt="logo John Doe" />
+            <p>Developpeur Web et Web mobile</p>
+          </a>
         </div>
+        <nav>
+          <ul class="navLink">
+            <li class="menuhead1"><a href="/index.html">Accueil</a></li>
+            <li class="menuhead2"><a href="#">Qui suis je ?</a></li>
+            <li class="menuhead3">
+              <a href="/formation.html">Ma formation</a>
+            </li>
+            <li class="menuhead4"><a href="#">Mes compétences</a></li>
+            <li class="menuhead5">
+              <a href="/mesprojets.html">Mes projets</a>
+            </li>
+          </ul>
+          <button class="buttonmodal">Contactez-moi</button>
+          <dialog class="modal">
+            <div>
+              <h2>Me contacter</h2>
+              <form action="" class="contactopen">
+                <div>
+                  <label for="name">Votre nom :</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                  <label for="name">Votre email :</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div>
+                  <label for="name">Votre message :</label>
+                  <textarea name="mess" id="mess"></textarea>
+                </div>
+                <div>
+                  <button>Envoyer la demande</button>
+                </div>
+              </form>
+              <div class="divbutton">
+                <button class="buttonmodalclose">fermer</button>
+              </div>
+            </div>
+          </dialog>
+          <button class="burger">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="moi">
-            <article class="textmoi">
-                <h2>John Doe - Développeur web et web mobile</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste similique aliquam, repellendus amet optio sunt omnis in vel tempora temporibus reprehenderit perferendis nesciunt sit, officia totam? Eius dolorum cum delectus!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste similique aliquam, repellendus amet optio sunt omnis in vel tempora temporibus reprehenderit perferendis nesciunt sit, officia totam? Eius dolorum cum delectus!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste similique aliquam, repellendus amet optio sunt omnis in vel tempora temporibus reprehenderit perferendis nesciunt sit, officia totam? Eius dolorum cum delectus!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste similique aliquam, repellendus amet optio sunt omnis in vel tempora temporibus reprehenderit perferendis nesciunt sit, officia totam? Eius dolorum cum delectus!
-                </p>
-                <form action="" class="contact">
-                    <input type="checkbox" name="" id="contactez">
-                    <label for="contactez">Contactez-moi</label>
-                </form>
-            </article>
-            <img src="img/moi.png" alt="photo du developpeur">
-        </section>
-        <section class="formation">
-            <h2>Ma formation</h2>
-                <article>
-                    <img src="/img/dev-a-la-carte.png" class="imgcode" alt="image de code">
-                    <div class="text1">
-                        <h3>Formation developpement à la carte</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quia autem deleniti, repudiandae fugit, explicabo eaque atque nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus quae vel vitae obcaecati.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quia autem deleniti, repudiandae fugit, explicabo eaque atque nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus quae vel vitae obcaecati.</p>
-                        <a href="#">En savoir plus</a>
-                    </div>
-                </article>
-                <article>
-                    <div class="text2">
-                        <h3>Formation developpement à la carte</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quia autem deleniti, repudiandae fugit, explicabo eaque atque nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus quae vel vitae obcaecati.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quia autem deleniti, repudiandae fugit, explicabo eaque atque nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus quae vel vitae obcaecati.</p>
-                        <a href="#">En savoir plus</a>
-                    </div>
-                    <img src="/img/dwwm.png" class="imgordi" alt="image d'un ordinateur">
-                </article>          
-        </section>
-        <section class="skill">
-            <h2>Mes compétences</h2>
-            <div class="comp1">
-                <div>
-                    <details>
-                        <summary>Language de programmation</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Conception Web</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Frameworks et bibliothèques</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Services web</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary>Base de donées</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Sécurité</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Outils de développement</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Autres compétences</summary>
-                        <ul>
-                            <li>Front-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                            <li>Back-end</li>
-                                <ul>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                    <li>uihdf</li>
-                                </ul>
-                        </ul>
-                    </details>
-                </div>
+      <section class="moi">
+        <article class="textmoi">
+          <h2>John Doe - Développeur web et web mobile</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+            similique aliquam, repellendus amet optio sunt omnis in vel tempora
+            temporibus reprehenderit perferendis nesciunt sit, officia totam?
+            Eius dolorum cum delectus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+            similique aliquam, repellendus amet optio sunt omnis in vel tempora
+            temporibus reprehenderit perferendis nesciunt sit, officia totam?
+            Eius dolorum cum delectus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+            similique aliquam, repellendus amet optio sunt omnis in vel tempora
+            temporibus reprehenderit perferendis nesciunt sit, officia totam?
+            Eius dolorum cum delectus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+            similique aliquam, repellendus amet optio sunt omnis in vel tempora
+            temporibus reprehenderit perferendis nesciunt sit, officia totam?
+            Eius dolorum cum delectus!
+          </p>
+          <form action="" class="contact">
+            <input type="checkbox" name="" id="contactez" />
+            <label for="contactez">Contactez-moi</label>
+          </form>
+        </article>
+        <img src="img/moi.png" alt="photo du developpeur" />
+      </section>
+      <section class="formation">
+        <h2>Ma formation</h2>
+        <article>
+          <img
+            src="/img/dev-a-la-carte.png"
+            class="imgcode"
+            alt="image de code"
+          />
+          <div class="text1">
+            <h3>Formation developpement à la carte</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+              quia autem deleniti, repudiandae fugit, explicabo eaque atque
+              nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus
+              quae vel vitae obcaecati.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+              quia autem deleniti, repudiandae fugit, explicabo eaque atque
+              nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus
+              quae vel vitae obcaecati.
+            </p>
+            <a href="#">En savoir plus</a>
+          </div>
+        </article>
+        <article>
+          <div class="text2">
+            <h3>Formation developpement à la carte</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+              quia autem deleniti, repudiandae fugit, explicabo eaque atque
+              nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus
+              quae vel vitae obcaecati.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+              quia autem deleniti, repudiandae fugit, explicabo eaque atque
+              nostrum iusto non nisi sunt fugiat id excepturi, necessitatibus
+              quae vel vitae obcaecati.
+            </p>
+            <a href="#">En savoir plus</a>
+          </div>
+          <img
+            src="/img/dwwm.png"
+            class="imgordi"
+            alt="image d'un ordinateur"
+          />
+        </article>
+      </section>
+      <section class="skill">
+        <h2>Mes compétences</h2>
+        <div class="comp1">
+          <div>
+            <details>
+              <summary>Language de programmation</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+            <details>
+              <summary>Conception Web</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+            <details>
+              <summary>Frameworks et bibliothèques</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+            <details>
+              <summary>Services web</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>Base de donées</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+            <details>
+              <summary>Sécurité</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+            <details>
+              <summary>Outils de développement</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+            <details>
+              <summary>Autres compétences</summary>
+              <ul>
+                <li>Front-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+                <li>Back-end</li>
+                <ul>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                  <li>uihdf</li>
+                </ul>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="projet">
+        <div class="projetheader">
+          <h2>Mes projets</h2>
+          <a href="#">Voir tous les projets</a>
+        </div>
+        <article>
+          <div>
+            <div class="mesprojets">
+              <img src="/img/projet1.PNG" alt="mon projet 1" />
+              <h3>Home Key - Intégration HTML & CSS</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
+                omnis modi delectus minus aspernatur voluptatum, quia tenetur
+                culpa accusamus incidunt esse ipsum hic exercitationem iusto
+                cupiditate est pariatur, non ullam.
+              </p>
             </div>
-        </section>
-        <section class="projet">
-            <div class="projetheader">
-                <h2>Mes projets</h2>
-                <a href="#">Voir tous les projets</a>
+            <a href="#">Lire la suite</a>
+          </div>
+          <div>
+            <div class="mesprojets">
+              <img src="/img/projet1.PNG" alt="mon projet 1" />
+              <h3>Home Key - Intégration HTML & CSS</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
+                omnis modi delectus minus aspernatur voluptatum, quia tenetur
+                culpa accusamus incidunt esse ipsum hic exercitationem iusto
+                cupiditate est pariatur, non ullam.
+              </p>
             </div>
-            <article>
-                <div>
-                    <div class="mesprojets">
-                        <img src="/img/projet1.PNG" alt="mon projet 1">
-                        <h3>Home Key - Intégration HTML & CSS</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui omnis modi delectus minus aspernatur voluptatum, quia tenetur culpa accusamus incidunt esse ipsum hic exercitationem iusto cupiditate est pariatur, non ullam.</p>
-                    </div>
-                    <a href="#">Lire la suite</a>
-                </div>
-                <div>
-                    <div class="mesprojets">
-                        <img src="/img/projet1.PNG" alt="mon projet 1">
-                        <h3>Home Key - Intégration HTML & CSS</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui omnis modi delectus minus aspernatur voluptatum, quia tenetur culpa accusamus incidunt esse ipsum hic exercitationem iusto cupiditate est pariatur, non ullam.</p>
-                    </div>
-                    <a href="#">Lire la suite</a>
-                </div>
-                <div>
-                    <div class="mesprojets">
-                        <img src="/img/projet1.PNG" alt="mon projet 1">
-                        <h3>Home Key - Intégration HTML & CSS</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui omnis modi delectus minus aspernatur voluptatum, quia tenetur culpa accusamus incidunt esse ipsum hic exercitationem iusto cupiditate est pariatur, non ullam.</p>
-                    </div>
-                    <a href="#">Lire la suite</a>
-                </div>
-            </article>
-        </section>
+            <a href="#">Lire la suite</a>
+          </div>
+          <div>
+            <div class="mesprojets">
+              <img src="/img/projet1.PNG" alt="mon projet 1" />
+              <h3>Home Key - Intégration HTML & CSS</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
+                omnis modi delectus minus aspernatur voluptatum, quia tenetur
+                culpa accusamus incidunt esse ipsum hic exercitationem iusto
+                cupiditate est pariatur, non ullam.
+              </p>
+            </div>
+            <a href="#">Lire la suite</a>
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
-        <p>Mon super site web</p>
+      <p>Mon super site web</p>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
